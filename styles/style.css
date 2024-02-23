@@ -38,9 +38,14 @@ body {
 }
 
 /* Elements */
+p {
+    margin: 0;
+}
+
 ul, 
 li, 
 a {
+    margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
@@ -74,16 +79,7 @@ a:active {
 /* Header */
 
 .nav-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
     background-color: #1E293B;
-    width: 12.5rem;
     padding: 1rem;
 }
 
@@ -92,8 +88,38 @@ a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .logo img{
-    width: 10rem;
+    width: 4rem;
+}
+
+.nav-links {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background-color: #1E293B;
+}
+
+@media (min-width: 50em) {
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: relative;
+        background-color: #1E293B;
+    }
 }

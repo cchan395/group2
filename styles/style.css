@@ -83,7 +83,13 @@ a:active {
 
 /* Header */
 
+.icons {
+    width: 4rem;
+}
+
 .nav-bar {
+    display: flex;
+    justify-content: space-between;
     background-color: #1E293B;
     padding: 1rem;
 }
@@ -94,10 +100,6 @@ a:active {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-}
-
-.logo img{
-    width: 4rem;
 }
 
 .nav-links {
@@ -138,5 +140,9 @@ a:active {
         position: relative;
         background-color: #1E293B;
         gap: 1rem;
+    }
+
+    .drop-down-menu {
+        display: none;
     }
 }

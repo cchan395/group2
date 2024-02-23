@@ -1,0 +1,68 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Colour Pallete
+# Generic (CALLED IN NORMALIZE.CSS)
+# Base
+	- Typography
+	- Elements
+	- Links
+# Components
+    - Header
+    - Main
+    - Footer
+# Body Layout Media Query
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Colour Pallete
+--------------------------------------------------------------*/
+/* 
+    #0F172A - main-colour
+    #0EA5E9 - accent-colour
+    #FFFFFF - secondary-colour
+    #0F172A - background-colour
+*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+/* Typography */
+body {
+    margin: 0 auto;
+    background-color: #0F172A;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Elements */
+ul, 
+li, 
+a {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Links */
+a,
+a:visited {
+    color: #FFFFFF;
+    border-bottom: 0.2rem solid transparent;
+}
+
+a:hover,
+a:focus {
+    width: 100%;
+    color: #0035A9;
+    border-bottom: 0.2rem solid #0035A9;
+}   
+
+a:focus,
+a:active {
+    outline: 0.1rem solid    #0035A9;
+    outline-offset: 0.1rem;
+    border-radius: 0.1rem;
+}
+

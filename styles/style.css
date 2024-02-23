@@ -18,10 +18,11 @@
 # Colour Pallete
 --------------------------------------------------------------*/
 /* 
-    #0F172A - main-colour
-    #0EA5E9 - accent-colour
-    #FFFFFF - secondary-colour
+    #0EA5E9 - main-colour
+    #FFFFFF - accent-colour
+    #1E293B - secondary-colour
     #0F172A - background-colour
+    1E293B
 */
 
 /*--------------------------------------------------------------
@@ -66,3 +67,18 @@ a:active {
     border-radius: 0.1rem;
 }
 
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header */
+
+.nav-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #1E293B;
+    width: 12.5rem;
+    padding: 1rem;
+}

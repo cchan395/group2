@@ -97,7 +97,7 @@ a:active {
 
 .nav-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 0.1rem;
     position: fixed;
     left: 0;

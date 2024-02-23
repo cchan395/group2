@@ -74,6 +74,10 @@ a:active {
 /* Header */
 
 .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     left: 0;
     top: 0;
@@ -81,4 +85,15 @@ a:active {
     background-color: #1E293B;
     width: 12.5rem;
     padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 10rem;
 }

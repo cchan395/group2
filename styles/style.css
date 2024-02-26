@@ -213,6 +213,10 @@ main{
     list-style: decimal;
 }
 
+.other-scenarios ul li {
+    list-style: disc;
+}
+
 @media (min-width: 50em) {
     .uses {
         max-width: 55rem;

@@ -146,3 +146,47 @@ a:active {
         display: none;
     }
 }
+
+
+/* Main */
+
+
+main{
+    text-align: center;
+}
+
+
+/* Section - where to use it? */
+
+.uses {
+    margin: 15rem auto;
+    text-align:left;
+    padding: 2rem; 
+}
+ .net {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+ }
+
+.content1 {
+    margin-bottom: 5rem;
+}
+
+.shop {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.other-list {
+   margin-top: 1rem;
+}
+
+.scenarios ol li {
+    list-style: decimal;
+}
+
+@media (min-width: 50em) {
+    .uses {
+        max-width: 55rem;
+    }
+}

@@ -53,7 +53,6 @@ a {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
 }
 
 /* Links */
@@ -121,6 +120,7 @@ a:active {
     padding: 0.5rem;
     background-color: #0EA5E9;
     border-radius: 0.5rem;
+    list-style: none;
 }
 
 @media (min-width: 50em) {
@@ -146,3 +146,32 @@ a:active {
         display: none;
     }
 }
+
+/*--------------------------------------------------------------
+# Main Sections
+--------------------------------------------------------------*/
+
+main{
+    text-align: center;
+}
+
+/* Sections - What is TailWind & What does it do?*/
+.defn, #purpose{
+    margin: 15rem auto;
+    text-align:left;
+    padding: 2rem;
+}
+
+@media (min-width: 50em) {
+    .defn{
+        display: grid;
+        grid-template-columns: 55% auto;
+        max-width: 55rem;
+    }
+
+    #purpose{
+        max-width: 55rem;
+    }
+}
+
+/* Section - Why use it?*/

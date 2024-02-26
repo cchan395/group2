@@ -212,3 +212,12 @@ main{
         max-width: 55rem;
     }
 }
+
+/* footer */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+}

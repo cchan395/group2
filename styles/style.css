@@ -257,6 +257,7 @@ a:active {
 
     .content-sections {
         width: 50vw;
+        padding: 0;
     }
 
     .definition {

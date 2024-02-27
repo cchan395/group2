@@ -185,7 +185,7 @@ main{
     list-style: decimal;
 }
 
-.other-scenarios ul li {
+.other-scenarios ul li, ul.defn-list li, #purpose ul li {
     list-style: disc;
 }
 

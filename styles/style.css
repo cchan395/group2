@@ -88,7 +88,7 @@ a:active {
 /* Header */
 
 .icons {
-    width: 1rem;
+    width: 1.5rem;
 }
 
 .header {
@@ -121,11 +121,12 @@ a:active {
 }
 
 .open-btn {
-    width: 0.7rem;
+    width: 0.6rem;
 }
 
 .close-btn {
-    width: 2rem;
+    display: none;
+    width: 1.6rem;
 }
 
 .nav-bar {
@@ -276,16 +277,17 @@ main{
 /* footer */
 .footer {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5rem;
+    justify-content: space-around;
     background-color: #1E293B;
     padding: 1rem;
 }
 
 .footer a {
     display: flex;
-    flex-direction: column;
+    gap: 0.5rem;
     align-items: center;
 }
 
@@ -298,9 +300,5 @@ main{
         bottom: 0;
         height: 15vh;
         font-size: 0.8rem;
-    }
-
-    .back-to-top-btn {
-        display: none;
     }
 }

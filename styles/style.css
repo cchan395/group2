@@ -43,8 +43,16 @@ body {
     line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
 /* Elements */
-html, body {
+html, 
+body {
     scroll-behavior: smooth;
 }
 
@@ -210,15 +218,23 @@ a:active {
 }
 
 /* Main */
-main{
-    text-align: center;
+.content-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5.0625rem 1rem 1rem 1rem;
+    height: 100vh;
+}
+
+.ul-list li{
+    list-style: disc;
+    margin-left: 1rem;
 }
 
 /* Sections - What is TailWind & What does it do?*/
-.defn, #purpose{
-    margin: 15rem auto;
-    text-align:left;
-    padding: 2rem;
+.defn h1{
+    font-size: 2rem;
 }
 
 @media (min-width: 50em) {
@@ -266,11 +282,35 @@ main{
 
 .other-scenarios ul li, ul.defn-list li, #purpose ul li {
     list-style: disc;
+    margin-left: 1rem;
 }
 
 @media (min-width: 50em) {
     .uses {
         max-width: 55rem;
+    }
+}
+
+/* general layout media query */
+@media (min-width: 50em) {
+
+    .right-position {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+    }
+}
+
+@media (min-width: 60em) {
+    
+    .right-position {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 85vw;
     }
 }
 

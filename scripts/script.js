@@ -17,8 +17,5 @@ function toggleNav() {
 }
 
 navBtn.addEventListener(`click`, toggleNav);
-
-console.log(navLinks);
-
 navLinks.forEach(link => {link.addEventListener(`click`, toggleNav)});
 

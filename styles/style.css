@@ -227,10 +227,12 @@ a:active {
 
 /* Main */
 .content-sections {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 6.0625rem 1rem 1rem 1rem;
+    padding: 6.0625rem 0 1rem 0;
+    width: 70vw;
 }
 
 .ul-list li{
@@ -254,7 +256,12 @@ a:active {
     }
 
     .content-sections {
-        justify-content: center;
+        width: 50vw;
+    }
+
+    .definition {
+        display: flex;
+        flex-direction: row;
         align-items: center;
     }
 }
@@ -262,11 +269,11 @@ a:active {
 @media (min-width: 60em) {
     
     .right-position {
-        position: absolute;
-        right: 0;
-        display: flex;
-        flex-direction: column;
         width: 85vw;
+    }
+
+    .content-sections {
+        width: 50vw;
     }
 }
 

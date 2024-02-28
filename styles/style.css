@@ -274,6 +274,8 @@ a:active {
     margin-left: 2rem;
 }
 
+
+
 .definition {
     height: 100vh;
     display: flex;
@@ -331,7 +333,7 @@ a:active {
     }
 
     .content-sections {
-        width: 80%;
+        width: 60%;
     }
 
     .definition {

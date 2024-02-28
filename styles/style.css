@@ -271,10 +271,8 @@ a:active {
 
 .ul-list li{
     list-style: disc;
-    margin-left: 2rem;
+    margin: 1rem 0 1rem 2rem;
 }
-
-
 
 .definition {
     height: 100vh;
@@ -297,6 +295,10 @@ a:active {
 }
 
 @media (min-width: 50em) {
+
+    .main {
+        gap: 5rem;
+    }
 
     .right-position {
         position: absolute;

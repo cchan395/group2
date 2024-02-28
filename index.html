@@ -42,69 +42,133 @@
                     <a href="#purpose">What does it do?</a>
                 </li>
                 <li>
-                    <a href="">Why use it?</a>
+                    <a href="#pros-and-cons">Why use it?</a>
                 </li>
                 <li>
                     <a href="#use-cases">Where to use?</a>
                 </li>
                 <li>
-                    <a href="">How to use?</a>
+                    <a href="#how-to-use">How to use?</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="definition" class="defn">
-            <div class="defn-left">
+    <main class="main right-position">
+        <section id="definition" class="definition content-sections">
+            <div>
                 <h1>What is Tailwind CSS? </h1>
-                <ul class="defn-list">
-                    <li>A Utility-first CSS framework for rapidly building custom user interfaces</li>
-                    <li>Released by Adam Wathan, David Hemphill, Steve Schoger, and Jonathan Reinink on November 1, 2017</li>
-                    <li>Has gained significant popularity among developers for its simplicity, flexibility, and efficiency</li>
+                <ul class="ul-list">
+                    <li>
+                        A Utility-first CSS framework for rapidly building custom user interfaces
+                    </li>
+                    <li>
+                        Released by Adam Wathan, David Hemphill, Steve Schoger, and Jonathan Reinink on November 1, 2017
+                    </li>
+                    <li>
+                        Has gained significant popularity among developers for its simplicity, flexibility, and efficiency
+                    </li>
                 </ul>
             </div>
             <figure>
                 <img src="images/tailwind-logo.png" alt="tailwind css logo">
             </figure>
+            <a href="#purpose" class="main-content-btn icons">
+                <img src="icons/arrow-down.svg" alt="to-main-content-btn">
+            </a>
         </section>
-        <section id="purpose">
+        <section id="purpose" class="content-sections">
             <h2>What does it do?</h2>
             <p>Key features of Tailwind CSS</p>
-            <ul>
-                <li>Provides low level utility classes such as typography, spacing, color, and more</li>
-                <li>Allows you to build custom designs directly within your HTML that  speeds up the development process</li>
-                <li>Provides a consistent and predictable styling system</li>
+            <ul class="ul-list">
+                <li>
+                    Provides low level utility classes such as typography, spacing, color, and more
+                </li>
+                <li>
+                    Allows you to build custom designs directly within your HTML that  speeds up the development process
+                </li>
+                <li>
+                    Provides a consistent and predictable styling system
+                </li>
             </ul>
         </section>
-        <section id="use-cases" class="uses">
+
+        <section id="pros-and-cons" class="content-sections">
+            <h2>Why Use it?</h2>
+            <article>
+                <h3>Pros:</h3>
+                <ul class="ul-list">
+                    <li>
+                        <h4>Flexibility:</h4>
+                        <p>Developers can easily customize and extend the utility classes to suit their specific project requirements. Can be used to create any kind of design, from simple to complex. It's the sweet spot if too much control and minimal control.</p>
+                    </li>
+                    <li>
+                        <h4>Consistency:</h4>
+                        <p>Promotes consistency in styling across projects and teams by using a standardized set of utility classes.</p>
+                    </li>
+                    <li>
+                        <h4>Performance:</h4>
+                        <p>Optimizes performance by generating CSS bundles tailored to the specific classes used in the project, resulting in smaller file sizes and faster load times.</p>
+                    </li>
+                    <li>
+                        <h4>Responsive Design:</h4>
+                        <p>Tailwind CSS facilitates the creation of responsive designs with built-in utility classes for managing layout, spacing, and typography across different screen sizes.</p>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3>Cons:</h3>
+                <ul class="ul-list">
+                    <li>
+                        <h4>Learning Curve:</h4>
+                        <p>Has a steep learning curve for developers who are not familiar with utility-first CSS frameworks -> Developers always spend more time and effort for learning new things, thus it would not be a big deal for most developers.</p>
+                    </li>
+                    <li>
+                        <h4>File Size:</h4>
+                        <p>Since Tailwind CSS generates CSS based on utility classes, the resulting CSS file can be larger than traditional CSS frameworks. -> Users can reduce the file size of the generated CSS by removing unused styles.</p>
+                    </li>
+                    <li>
+                        <h4>Design Constraints:</h4>
+                        <p>Some designers and developers may find the utility-first approach of Tailwind CSS limiting in terms of expressing complex design concepts or achieving pixel-perfect layouts. -> It is up to individual preferences.</p>
+                    </li>
+                    <li>
+                        <h4>Styling and HTML can be Mixed:</h4>
+                        <p>Tailwind works differently than most CSS frameworks. While this is great for those unfamiliar with CSS, it also means that Tailwind mixes style rules in with your HTML files.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="use-cases" class="content-sections">
             <h2>Where to use?</h2>
-            <p>Tailwind CSS can be applied to various use cases in web development. Here are some specific scenarios where Tailwind CSS excels:</p>
-            <div class="scenarios">                 
-                <ol>
-                    <li class="content1">
-                        Blog and Content Websites: Tailwind CSS is suitable for building blog platforms, news websites, and other content-focused applications. Its utility-first approach simplifies the styling of text, images, and other content elements, allowing developers to focus on creating engaging user experiences.
-                         
-                        <img class="net" src="images/netflix top 10.jpg" alt="netflix">
-
+            <p>Tailwind CSS can be applied to various use cases in web development. Here are some specific scenarios where Tailwind CSS excels:</p>                
+            <ul class="ul-list">
+                <li>
+                    <h3>Blog and Content Websites:</h3>
+                    <p>
+                        Tailwind CSS is suitable for building blog platforms, news websites, and other content-focused applications. Its utility-first approach simplifies the styling of text, images, and other content elements, allowing developers to focus on creating engaging user experiences.
+                    </p>
+                    <img src="images/netflix top 10.jpg" alt="netflix">
+                    <p>
                         The Netflix Global Top 10 website features weekly lists of the globally most-watched TV and films on Netflix. The website is built with Tailwind CSS and Next.js / React.    
-                    </li>
+                    </p>
+                </li>
+                <li>
+                    <h3>E-commerce Websites:</h3>
+                    <p>
+                        Tailwind CSS can be used to style various components of e-commerce websites, such as product listings, shopping carts, and checkout forms. Its flexible utility classes make it easy to create custom layouts and designs tailored to the needs of the e-commerce platform. 
+                    </p>
+                    <img src="images/shopify tailwind.jpg" alt="shopify">
+                    <p>
+                        With over 2 million vendors on their platform, Shopify is one of the world's largest and most popular ecommerce solutions. The Shopify team recently redesigned their marketing website using React and Tailwind CSS.
+                    </p>
+                </li>
+            </ul>
 
-                    <li class="content2">
-
-                        E-commerce Websites: Tailwind CSS can be used to style various components of e-commerce websites, such as product listings, shopping carts, and checkout forms. Its flexible utility classes make it easy to create custom layouts and designs tailored to the needs of the e-commerce platform. 
-
-                        <img class="shop" src="images/shopify tailwind.jpg" alt="shopify">
-
-                        With over 2 million vendors on their platform, Shopify is one of the world’s largest and most popular ecommerce solutions. The Shopify team recently redesigned their marketing website using React and Tailwind CSS.
-                    </li>
-                </ol>
-            </div>
-
-            <div class="other-scenarios">
+            <div>
                 <h3>Other scenarios:</h3>
 
                 <p>Tailwind CSS is a versatile tool that can be used in various web development scenarios;</p>
-                <ul class="other-list">
+                <ul class="ul-list">
                     <li>
                         Tailwind CSS is excellent for quickly prototyping user interfaces.  
                     </li>
@@ -114,9 +178,11 @@
                     <li>
                         Tailwind CSS provides built-in support for responsive design with breakpoints and responsive utility classes.
                     </li>
-                    
                 </ul>
             </div>
+        </section>
+        <section id="how-to-use" class="content-sections">
+            <h2>How to use?</h2>
         </section>
     </main>
     <footer class="footer left-position">

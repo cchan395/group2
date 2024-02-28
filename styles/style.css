@@ -22,7 +22,6 @@
     #FFFFFF - accent-colour
     #1E293B - secondary-colour
     #0F172A - background-colour
-    1E293B
 */
 
 /*--------------------------------------------------------------
@@ -43,8 +42,49 @@ body {
     line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p,
+li {
+    font-size: 1rem;
+}
+
+@media (min-width: 50em) {
+    
+    h1 {
+        font-size: 3rem;
+    }
+
+    p,
+    li {
+    font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 60em) {
+    
+    h1 {
+        font-size: 4rem;
+    }
+
+    p,
+    li {
+    font-size: 1rem;
+    }
+}
+
 /* Elements */
-html, body {
+html, 
+body {
     scroll-behavior: smooth;
 }
 
@@ -100,6 +140,7 @@ a:active {
     justify-content: space-between;
     background-color: #1E293B;
     padding: 1rem;
+    z-index: 3;
 }
 
 .logo {
@@ -210,71 +251,101 @@ a:active {
 }
 
 /* Main */
-main{
-    text-align: center;
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-/* Sections - What is TailWind & What does it do?*/
-.defn, #purpose{
-    margin: 15rem auto;
-    text-align:left;
-    padding: 2rem;
+.content-sections {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 6.0625rem 0 1rem 0;
+    width: 80%;
 }
 
-@media (min-width: 50em) {
-    .defn{
-        display: grid;
-        grid-template-columns: 55% auto;
-        max-width: 55rem;
-    }
-
-    #purpose{
-        max-width: 55rem;
-    }
+.content-sections article{
+    padding-left: 1rem;
 }
 
-/* Section - Why use it?*/
-
-/* Section - where to use it? */
-
-.uses {
-    margin: 15rem auto;
-    text-align:left;
-    padding: 2rem; 
-}
- .net {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-
- }
-
-.content1 {
-    margin-bottom: 5rem;
-}
-
-.shop {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
-.other-list {
-   margin-top: 1rem;
-}
-
-.scenarios ol li {
-    list-style: decimal;
-}
-
-.other-scenarios ul li, ul.defn-list li, #purpose ul li {
+.ul-list li{
     list-style: disc;
+    margin-left: 2rem;
+}
+
+
+
+.definition {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.definition figure {
+    margin: 0 auto;
+    max-width: 20rem;
+}
+
+.main-content-btn {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
 @media (min-width: 50em) {
-    .uses {
-        max-width: 55rem;
+
+    .right-position {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+    }
+
+    .content-sections {
+        width: 90%;
+        padding: 0;
+    }
+
+    .definition {
+        position: relative;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .definition figure img {
+        max-width: 12rem;
+    }
+
+    .ul-list li{
+        font-size: 1.1rem;
     }
 }
 
-/* footer */
+@media (min-width: 60em) {
+    
+    .right-position {
+        width: 85vw;
+    }
+
+    .content-sections {
+        width: 60%;
+    }
+
+    .definition {
+        flex-direction: row;
+    }
+
+    .definition figure img {
+        max-width: 25rem;
+    }
+}
+
+/* Footer */
 .footer {
     display: flex;
     flex-direction: column;

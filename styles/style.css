@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -36,7 +39,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "slnt" 0;
+        "slnt" 0;
     color: #FFFFFF;
     font-weight: 400;
     line-height: 1.5;
@@ -59,31 +62,31 @@ li {
 }
 
 @media (min-width: 50em) {
-    
+
     h1 {
         font-size: 3rem;
     }
 
     p,
     li {
-    font-size: 0.7rem;
+        font-size: 0.7rem;
     }
 }
 
 @media (min-width: 60em) {
-    
+
     h1 {
         font-size: 4rem;
     }
 
     p,
     li {
-    font-size: 1rem;
+        font-size: 1rem;
     }
 }
 
 /* Elements */
-html, 
+html,
 body {
     scroll-behavior: smooth;
 }
@@ -92,8 +95,8 @@ p {
     margin: 0;
 }
 
-ul, 
-li, 
+ul,
+li,
 a {
     margin: 0;
     padding: 0;
@@ -112,11 +115,11 @@ a:hover,
 a:focus {
     color: #0035A9;
     border-bottom: 0.2rem solid #0035A9;
-}   
+}
 
 a:focus,
 a:active {
-    outline: 0.1rem solid    #0035A9;
+    outline: 0.1rem solid #0035A9;
     outline-offset: 0.1rem;
     border-radius: 0.1rem;
 }
@@ -193,7 +196,7 @@ a:active {
     padding: 1rem;
 }
 
-.nav-links li{
+.nav-links li {
     text-align: center;
     padding: 1rem;
     background-color: #0EA5E9;
@@ -244,7 +247,7 @@ a:active {
 }
 
 @media (min-width: 60em) {
-    
+
     .left-position {
         width: 15vw;
     }
@@ -265,11 +268,11 @@ a:active {
     width: 80%;
 }
 
-.content-sections article{
+.content-sections article {
     padding-left: 1rem;
 }
 
-.ul-list li{
+.ul-list li {
     list-style: disc;
     margin: 1rem 0 1rem 2rem;
 }
@@ -292,6 +295,24 @@ a:active {
     left: 0;
     right: 0;
     z-index: 2;
+}
+
+/* code demos */
+.tailwind-demo-container img {
+    width: 80%;
+}
+
+.vanilla-demo-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.css-demo {
+    width: 40%;
+}
+
+.transition a {
+    color: skyblue;
 }
 
 @media (min-width: 50em) {
@@ -323,13 +344,13 @@ a:active {
         max-width: 12rem;
     }
 
-    .ul-list li{
+    .ul-list li {
         font-size: 1.1rem;
     }
 }
 
 @media (min-width: 60em) {
-    
+
     .right-position {
         width: 85vw;
     }

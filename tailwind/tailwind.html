@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind-version</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../src/output.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="bg-[#0f172a] text-[#ffffff] leading-6">
+    <header class="w-full flex justify-between fixed p-4 z-3 bg-[#1e293b] md:fixed md:w-1/4 md:h-full md:left-0 md:top-0 md:flex-col md:justify-start">
+        <div class="flex items-center justify-center gap-6 md:flex-col">
+            <img class="w-20" src="../images/tailwind-logo.png" alt="tailwind-logo">
+            <p class="text-lg">Tailwind CSS</p>
+        </div>
+        <div class="flex justify-end z-10 nav-btn md:hidden">
+            <img class="w-3 open-btn" src="../icons/three-dot-menu.svg" alt="nav-bar toggle btn">
+            <img class="close-btn hidden w-6" src="../icons/close-btn.svg" alt="nav-bar close btn">
+        </div>
+        <nav class="hidden fixed p-4 pt-20 left-0 m-0 w-full bg-[#1e293b] nav-bar md:block md:relative md:w-full">
+            <ul class="flex-col justify-evenly gap-4 text-base w-full nav-links">
+                <li class="text-center p-4 m-4 bg-[#0ea5e9] rounded-lg">
+                <a class="md:focus:text-[#0035a9] md:active:text-[#0035a9] md:hover:text-[#0035a9]" href="#definition">What is Tailwind?</a>
+                </li>
+                <li class="text-center p-4 m-4 bg-[#0ea5e9] rounded-lg">
+                    <a class="md:focus:text-[#0035a9] md:active:text-[#0035a9] md:hover:text-[#0035a9]" href="#purpose">What does it do?</a>
+                </li>
+                <li class="text-center p-4 m-4 bg-[#0ea5e9] rounded-lg">
+                    <a class="md:focus:text-[#0035a9] md:active:text-[#0035a9] md:hover:text-[#0035a9]" href="#pros-and-cons">Why use it?</a>
+                </li>
+                <li class="text-center p-4 m-4 bg-[#0ea5e9] rounded-lg">
+                    <a class="md:focus:text-[#0035a9] md:active:text-[#0035a9] md:hover:text-[#0035a9]" href="#use-cases">Where to use?</a>
+                </li>
+                <li class="text-center p-4 m-4 bg-[#0ea5e9] rounded-lg">
+                    <a class="md:focus:text-[#0035a9] md:active:text-[#0035a9] md:hover:text-[#0035a9]" href="#how-to-use">How to use?</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-col gap-4 md:w-3/4 md:absolute md:right-0 md:items-center">
+        <section id="definition" class="pt-24 flex-col my-0 mx-auto w-4/5 md:w-3/4">
+            <div>
+                <h1 class="text-3xl font-bold md:text-5xl">What is Tailwind CSS? </h1>
+                <ul class="list-disc mx-4 mt-0 mb-8 py-4">
+                    <li class="mx-4 mt-0 mb-8">
+                        A Utility-first CSS framework for rapidly building custom user interfaces
+                    </li>
+                    <li class="mx-4 mt-0 mb-8">
+                        Released by Adam Wathan, David Hemphill, Steve Schoger, and Jonathan Reinink on November 1, 2017
+                    </li>
+                    <li class="mx-4 mt-0 mb-8">
+                        Has gained significant popularity among developers for its simplicity, flexibility, and efficiency
+                    </li>
+                </ul>
+            </div>
+            <figure class="md:flex md:justify-center">
+                <img src="../images/tailwind-logo.png" alt="tailwind css logo">
+            </figure>
+            <a href="#purpose" class="block mx-auto my-0 w-6 z-2 pt-6">
+                <img src="../icons/arrow-down.svg" alt="to-main-content-btn">
+            </a>
+        </section>
+        <section id="purpose" class="pt-24 flex-col my-0 mx-auto w-4/5 md:w-3/4">
+            <h2 class="text-3xl font-bold">What does it do?</h2>
+            <p class="text-lg">Key features of Tailwind CSS</p>
+            <ul class="list-disc mx-4 mt-0 mb-8 py-4">
+                <li class="mx-4 mt-0 mb-8">
+                    Provides low level utility classes such as typography, spacing, color, and more
+                </li>
+                <li class="mx-4 mt-0 mb-8">
+                    Allows you to build custom designs directly within your HTML that  speeds up the development process
+                </li>
+                <li class="mx-4 mt-0 mb-8">
+                    Provides a consistent and predictable styling system
+                </li>
+            </ul>
+        </section>
+
+        <section id="pros-and-cons" class="pt-24 flex-col my-0 mx-auto w-4/5 md:w-3/4">
+            <h2 class="text-3xl font-bold">Why Use it?</h2>
+            <article>
+                <h3 class="text-lg pl-4 font-bold">Pros:</h3>
+                <ul class="list-disc mx-4 mt-0 mb-8 py-4">
+                    <li class="mx-4 mt-0 mb-8">
+                        <h4 class="font-bold">Flexibility:</h4>
+                        <p>Developers can easily customize and extend the utility classes to suit their specific project requirements. Can be used to create any kind of design, from simple to complex. It's the sweet spot if too much control and minimal control.</p>
+                    </li>
+                    <li class="mx-4 mt-0 mb-8">
+                        <h4 class="font-bold">Consistency:</h4>
+                        <p>Promotes consistency in styling across projects and teams by using a standardized set of utility classes.</p>
+                    </li>
+                    <li class="mx-4 mt-0 mb-8">
+                        <h4 class="font-bold">Performance:</h4>
+                        <p>Optimizes performance by generating CSS bundles tailored to the specific classes used in the project, resulting in smaller file sizes and faster load times.</p>
+                    </li>
+                    <li class="mx-4 mt-0 mb-8">
+                        <h4 class="font-bold">Responsive Design:</h4>
+                        <p>Tailwind CSS facilitates the creation of responsive designs with built-in utility classes for managing layout, spacing, and typography across different screen sizes.</p>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3 class="text-lg pl-4 font-bold">Cons:</h3>
+                <ul class="list-disc mx-4 mt-0 mb-8 py-4">
+                    <li class="mx-4 mt-0 mb-8">
+                        <h4 class="font-bold">Learning Curve:</h4>
+                        <p>Has a steep learning curve for developers who are not familiar with utility-first CSS frameworks -> Developers always spend more time and effort for learning new things, thus it would not be a big deal for most developers.</p>
+                    </li>
+                    <li class="mx-4 mt-0 mb-8">
+                        <h4 class="font-bold">File Size:</h4>
+                        <p>Since Tailwind CSS generates CSS based on utility classes, the resulting CSS file can be larger than traditional CSS frameworks. -> Users can reduce the file size of the generated CSS by removing unused styles.</p>
+                    </li>
+                    <li class="mx-4 mt-0 mb-8">
+                        <h4 class="font-bold">Design Constraints:</h4>
+                        <p>Some designers and developers may find the utility-first approach of Tailwind CSS limiting in terms of expressing complex design concepts or achieving pixel-perfect layouts. -> It is up to individual preferences.</p>
+                    </li>
+                    <li class="mx-4 mt-0 mb-8">
+                        <h4 class="font-bold">Styling and HTML can be Mixed:</h4>
+                        <p>Tailwind works differently than most CSS frameworks. While this is great for those unfamiliar with CSS, it also means that Tailwind mixes style rules in with your HTML files.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="use-cases" class="pt-24 flex-col my-0 mx-auto w-4/5 md:w-3/4">
+            <h2 class="text-3xl font-bold">Where to use?</h2>
+            <p class="text-lg">Tailwind CSS can be applied to various use cases in web development. Here are some specific scenarios where Tailwind CSS excels:</p>                
+            <ul class="list-disc mx-4 mt-0 mb-8 py-4">
+                <li class="mx-4 mt-0 mb-8">
+                    <h3 class="text-lg font-bold">Blog and Content Websites:</h3>
+                    <p>
+                        Tailwind CSS is suitable for building blog platforms, news websites, and other content-focused applications. Its utility-first approach simplifies the styling of text, images, and other content elements, allowing developers to focus on creating engaging user experiences.
+                    </p>
+                    <img src="../images/netflix top 10.jpg" alt="netflix">
+                    <p>
+                        The Netflix Global Top 10 website features weekly lists of the globally most-watched TV and films on Netflix. The website is built with Tailwind CSS and Next.js / React.    
+                    </p>
+                </li>
+                <li class="mx-4 mt-0 mb-8">
+                    <h3 class="text-lg font-bold">E-commerce Websites:</h3>
+                    <p>
+                        Tailwind CSS can be used to style various components of e-commerce websites, such as product listings, shopping carts, and checkout forms. Its flexible utility classes make it easy to create custom layouts and designs tailored to the needs of the e-commerce platform. 
+                    </p>
+                    <img src="../images/shopify tailwind.jpg" alt="shopify">
+                    <p>
+                        With over 2 million vendors on their platform, Shopify is one of the world's largest and most popular ecommerce solutions. The Shopify team recently redesigned their marketing website using React and Tailwind CSS.
+                    </p>
+                </li>
+            </ul>
+
+            <div>
+                <h3 class="text-2xl font-bold">Other scenarios:</h3>
+
+                <p class="text-lg">Tailwind CSS is a versatile tool that can be used in various web development scenarios;</p>
+                <ul class="list-disc mx-4 mt-0 mb-8 py-4">
+                    <li class="mx-4 mt-0 mb-8">
+                        Tailwind CSS is excellent for quickly prototyping user interfaces.  
+                    </li>
+                    <li class="mx-4 mt-0 mb-8">
+                        Tailwind CSS can be used to create custom design systems for projects.  
+                    </li>
+                    <li class="mx-4 mt-0 mb-8">
+                        Tailwind CSS provides built-in support for responsive design with breakpoints and responsive utility classes.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="how-to-use" class="pt-24 flex-col my-0 mx-auto w-4/5 md:w-3/4">
+            <h2 class="text-3xl font-bold">How to use?</h2>
+            <ul class="list-disc mx-4 mt-0 mb-8 py-4">
+                <li class="mx-4 mt-0 mb-8">
+                    <h3 class="text-lg font-bold">Installation Video:</h3>
+                    <video controls class="w-full">
+                        <source src="../media/tailwind-installation-video.mp4">
+                    </video>
+                </li>
+                <li class="mx-4 mt-0 mb-8">
+                    <h3 class="text-lg font-bold">Code Demos:</h3>
+                    <h4>First main section with Tailwind CSS <em>&darr;</em></p>
+                    <div class="my-6">
+                        <img class="p-0 m-0 w-full" src="../images/with-tailwind.png" alt="code demos with tailwind css">
+                    </div>
+                    <h4>First main section with Vanilla CSS <em>&darr;</em></p>
+                    <div class="flex-wrap">
+                        <img class="p-0 m-0 w-full" src="../images/vanilla html.png" alt="code demos with vanilla css-01">
+                        <img class="w-1/3 h-3/4" src="../images/vanilla css.png" alt="code demos with vanilla css-02">
+                        <img class="w-1/3 h-3/4" src="../images/vanilla css mq.png" alt="code demos with vanilla css-03">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="flex-col gap-4 items-center justify-around bg-[#1e293b] p-4 md:fixed md:bottom-4 md:left-0 md:w-1/4">
+        <a class="flex items-center gap-2 justify-center" href="https://github.com/cchan395/group2" target="_blank" rel="noopener noreferrer">
+            <img src="../icons/github-logo.svg" alt="github logo" class="w-6">
+            GitHub
+        </a>
+        <p class="text-center pt-4">© 2024 Group 2</p>
+    </footer>
+    <script src="../src/script.js"></script>
+</body>
+</html>
